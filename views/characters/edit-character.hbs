@@ -1,0 +1,29 @@
+<h1>Edit Character</h1>
+<form action="/characters/{{id}}/update" method="post">
+
+<div>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value="{{name}}">
+</div>
+
+<div>
+    <label for="occupation">Occupation</label>
+    <input type="text" name="occupation" id="occupation" value="{{occupation}}">
+</div>
+
+<div>
+    <label for="weapon">Weapon</label>
+    <input type="text" name="weapon" id="weapon" value="{{weapon}}">
+</div>
+
+<div>
+    <label for="debt">Check if in debt. Leave it empty if not in debt</label>
+    <input name="debt" type="checkbox" value="true" />
+    {{!-- <input name="debt" type="hidden" value="false" /> --}}
+</div>
+
+
+<button type="submit">Submit</button>
+
+
+</form>
